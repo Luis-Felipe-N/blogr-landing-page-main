@@ -39,6 +39,7 @@
 .m-dropdown-items {
     position: relative;
     display: inline-block;
+    padding: 1rem;
 }
 
 .m-dropdown-items a {
