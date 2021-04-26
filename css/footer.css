@@ -1,0 +1,68 @@
+#rodape {
+    background-color: var(--dark);
+}
+
+.wrapper-rodape {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.logo-rodape {
+    margin-right: 15%;
+}
+
+.menu-rodape {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.m-rodape {
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-rodape-items > a {
+    display: inline-block;
+    color: var(--color-white);
+    padding: .7rem .2rem;
+}
+
+.m-rodape-items a:hover {
+    text-decoration: underline;
+}
+
+.m-rodape-submenu li a {
+    display: inline-block;
+    color: var(--gray-blue);
+    padding: .2rem;
+}
+
+.m-rodape-submenu li a:hover {
+    color: var(--color-white);
+}
+
+@media (max-width: 800px) {
+    .wrapper-rodape {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+
+    .logo-rodape {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .m-rodape {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}

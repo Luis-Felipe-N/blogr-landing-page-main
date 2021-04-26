@@ -1,0 +1,235 @@
+#intro {
+    background: url(/images/bg-pattern-intro.svg), linear-gradient(to right bottom, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    background: url(/images/bg-pattern-intro.svg),linear-gradient(to right, hsl(13, 100%, 72%), #ff3d54);
+    background-position: 20%;
+    background-size: 180%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: var(--color-text-white);
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom-left-radius: 15%;
+}
+
+/* Header */
+
+.wrapper__cabecalho{
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.menu {
+    margin-left: 2rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.m-dropdown {
+    display: flex;
+    gap: 1rem;
+}
+
+.m-dropdown-items {
+    position: relative;
+    display: inline-block;
+}
+
+.m-dropdown-items a {
+    color: var(--color-text-white);
+    display: flex;
+    align-items: flex-start;
+    gap: .3rem;
+    font-weight: 700;
+}
+/* .m-dropdown-items a:not(i) {
+    text-decoration: underline;
+} */
+
+.m-dropdown-submenu {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background-color: var(--color-white);
+    border-radius: .2rem;
+    position: absolute;
+    left: -0.4125rem;
+    box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.05);
+    transition: .5s;
+    display: none;
+}
+
+.m-dropdown-submenu-items:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.m-dropdown-items:hover .m-dropdown-submenu {
+    transition: .9s;
+    display: block;
+}
+
+.m-dropdown-items a .fas {
+    transition: .1s;
+}
+
+.m-dropdown-items:hover .fas {
+    transform: rotate(-180deg);
+    
+}
+
+.m-dropdown-submenu-items a {
+    color: var(--light-dark);
+}
+
+.m-dropdown-submenu-items a:hover {
+    color: var(--dark);
+}
+
+.login {
+    justify-content: flex-end;
+    display: flex;
+    gap: .8rem;
+}
+
+.btn-login {
+    background-color: transparent;
+}
+
+.btn-sign-up {
+    color: var(--light-red);
+}
+
+.btn-sign-up:hover {
+    color: var(--color-text-white);
+    background-color: var(--very-light-red);
+}
+
+/* menu mobile */
+
+.menu-mobile, #input-menu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    #intro {
+        background-size: 200%;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu {
+        z-index: 3;
+        position: absolute;
+        top: 5.5rem;
+        left: -100%;
+        background: rgb(255, 255, 255);
+        gap: 2.5rem;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5%;
+        padding: 2rem;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .2);
+        transition: .2s;
+    }
+
+    .m-dropdown {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid var(--gray-blue);
+    }
+
+    .m-dropdown-items {
+        width: 100%;
+    }
+    
+    .m-dropdown-items a {
+        color: var(--very-dark-blue);
+        justify-content: center;
+    }
+    
+    .m-dropdown-submenu {
+        position: static;
+        display: block;
+        width: 90%;
+        margin: .7rem auto;
+        background-color:  hsl(240, 2%, 79%);
+        box-shadow: none;
+
+        overflow: hidden;
+        padding: 0;
+        height: 0;
+        transition: .2s;
+    }
+
+    .m-dropdown-items:hover .m-dropdown-submenu {
+        transition: .2s;
+        padding: 1rem;
+        height: 100%;
+    }
+
+    .login {
+        flex-direction: column;
+    }
+
+    .btn-login {
+        color: var(--very-dark-blue);
+    }
+
+    .btn-menu {
+        cursor: pointer;
+    }
+
+    .menu.menu-show {
+        left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    #intro {
+        background-size: 300%;
+    }
+}
+
+/* Content Intro */
+
+.wrapper__hero {
+    text-align: center;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: 'Overpass';
+}
+
+.wrapper__hero h1 {
+    font-size: 2.5rem;
+}
+
+.btn-star {
+    background-color: var(--color-white);
+    color: var(--light-red);
+    margin-right: .5rem;
+}
+
+.btn-star:hover {
+    color: var(--color-text-white);
+    background-color: var(--very-light-red);
+}
+
+.btn-learn-more {
+    background: transparent;
+    border: 2px solid var(--color-white);
+}
+
+.btn-learn-more:hover {
+    background-color: var(--color-white);
+    color: var(--light-red);
+}
