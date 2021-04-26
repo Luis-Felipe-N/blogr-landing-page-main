@@ -166,7 +166,7 @@
         overflow: hidden;
         padding: 0;
         height: 0;
-        transition: .2s;
+        transition: .0s;
     }
 
     .m-dropdown-items:hover .m-dropdown-submenu {
