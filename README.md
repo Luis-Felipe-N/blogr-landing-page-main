@@ -6,8 +6,7 @@
 
 ## Site
 
-Pode ver a versão mobile e desktop - [Aqui](https://blogr-luis.netlify.app/)
-
+Pode ver a versão mobile e desktop - <a href="https://blogr-luis.netlify.app/" target="_blank" rel="noopener noreferrer">Aqui</a>
 ## Tecnologias
 
 - HTML
