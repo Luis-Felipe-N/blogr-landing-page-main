@@ -6,7 +6,7 @@
 
 ## Site
 
-Pode ver a versão mobile e desktop - [Aqui](blogr-luis.netlify.app)
+Pode ver a versão mobile e desktop - [Aqui](https://blogr-luis.netlify.app/)
 
 ## Tecnologias
 
